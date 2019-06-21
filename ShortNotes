@@ -1,0 +1,13 @@
+Error Handlers:
+----------------
+Processor level > flow level> application level (Precedence level)
+
+If Flow has error handler.
+	Scenario1 :Then it will try to evaluate the scope and upon matching it will throw whatever mentioned in scope.
+	Scenario2: Then it will try to evaluate the scope and upon NOT matching it will throw as deafult handler exception(not to care abt the scope in default handler)
+	
+If Flow has Not error handler.
+	It will go for default handler and try to execute the scope defined in defalut handler.
+	
+Subflow Error will be similar to Tibco
+
